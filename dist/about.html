@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About - TechFlow</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  
+  <div id="page-loader">
+      <div class="loader-spinner"></div>
+  </div>
+
+  
+  <a href="#" class="back-to-top">
+      <i class="bi bi-arrow-up"></i>
+  </a>
+
+  
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand text-primary fw-bold fs-3" href="index.html">
+            <i class="bi bi-lightning-charge-fill me-2"></i>TechFlow
+        </a>
+        
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fw-semibold" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu shadow">
+                        <li><a class="dropdown-item" href="index.html#services"><i class="bi bi-code-slash me-2"></i>Web Development</a></li>
+                        <li><a class="dropdown-item" href="index.html#services"><i class="bi bi-phone me-2"></i>Mobile Apps</a></li>
+                        <li><a class="dropdown-item" href="index.html#services"><i class="bi bi-cloud me-2"></i>Cloud Solutions</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="contact.html"><i class="bi bi-headset me-2"></i>Support</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="d-flex gap-2">
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <i class="bi bi-person me-1"></i>Login
+                </button>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
+                    <i class="bi bi-rocket-takeoff me-1"></i>Get Started
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+  <main>
+    <section class="about-hero-section min-vh-50 d-flex align-items-center" style="background: var(--gradient-primary); padding-top: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h1 class="display-4 fw-bold mb-3" data-aos="fade-up">About TechFlow</h1>
+                    <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">
+                        We're a team of passionate innovators dedicated to transforming businesses through technology.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold mb-4">Our Story</h2>
+                    <p class="lead text-muted mb-4">
+                        Founded in 2015, TechFlow began with a simple mission: to help businesses leverage technology for growth and innovation.
+                    </p>
+                    <p class="mb-4">
+                        What started as a small team of developers has grown into a full-service technology partner for businesses worldwide. 
+                        We've helped over 250 clients transform their operations, reach new customers, and achieve their business goals.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <a href="contact.html" class="btn btn-primary btn-lg px-4">
+                            <i class="bi bi-telephone me-2"></i>Contact Us
+                        </a>
+                        <a href="index.html#services" class="btn btn-outline-primary btn-lg px-4">
+                            <i class="bi bi-grid me-2"></i>Our Services
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                            class="img-fluid rounded-4 shadow-lg" alt="TechFlow Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">Our Values</h2>
+                    <p class="lead text-muted" data-aos="fade-up" data-aos-delay="100">
+                        The principles that guide everything we do
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon bg-gradient-primary text-white rounded-circle mb-3 mx-auto">
+                                <i class="bi bi-lightbulb fs-2"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Innovation</h4>
+                            <p class="text-muted">We constantly explore new technologies and approaches to deliver cutting-edge solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon bg-gradient-success text-white rounded-circle mb-3 mx-auto">
+                                <i class="bi bi-people fs-2"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Collaboration</h4>
+                            <p class="text-muted">We work closely with our clients to understand their needs and deliver tailored solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon bg-gradient-primary text-white rounded-circle mb-3 mx-auto">
+                                <i class="bi bi-award fs-2"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Excellence</h4>
+                            <p class="text-muted">We're committed to delivering the highest quality solutions that exceed expectations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">Meet Our Team</h2>
+                    <p class="lead text-muted" data-aos="fade-up" data-aos-delay="100">
+                        The talented people behind TechFlow's success
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-card card border-0 shadow-sm h-100">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                                class="card-img-top" alt="Team Member">
+                        <div class="card-body text-center p-4">
+                            <h4 class="fw-bold mb-1">John Smith</h4>
+                            <p class="text-primary mb-3">CEO & Founder</p>
+                            <p class="text-muted mb-4">With over 15 years of experience in technology leadership.</p>
+                            <div class="social-links d-flex justify-content-center gap-3">
+                                <a href="#" class="text-primary"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-primary"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-primary"><i class="bi bi-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-card card border-0 shadow-sm h-100">
+                        <img src="https://pulitzercenter.org/sites/default/files/2023-06/Sarah%20Johnson.JPG" 
+                                class="card-img-top" alt="Team Member">
+                        <div class="card-body text-center p-4">
+                            <h4 class="fw-bold mb-1">Sarah Johnson</h4>
+                            <p class="text-primary mb-3">CTO</p>
+                            <p class="text-muted mb-4">Expert in cloud architecture and software development.</p>
+                            <div class="social-links d-flex justify-content-center gap-3">
+                                <a href="#" class="text-primary"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-primary"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-primary"><i class="bi bi-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="team-card card border-0 shadow-sm h-100">
+                        <img src="data:image/jpeg;base64,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" 
+                                class="card-img-top" alt="Team Member">
+                        <div class="card-body text-center p-4">
+                            <h4 class="fw-bold mb-1">Mike Davis</h4>
+                            <p class="text-primary mb-3">Lead Developer</p>
+                            <p class="text-muted mb-4">Specializes in full-stack development and system architecture.</p>
+                            <div class="social-links d-flex justify-content-center gap-3">
+                                <a href="#" class="text-primary"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-primary"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-primary"><i class="bi bi-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h2 class="display-5 fw-bold mb-3" data-aos="zoom-in">Ready to Work With Us?</h2>
+                    <p class="lead mb-4" data-aos="zoom-in" data-aos-delay="100">
+                        Let's discuss how we can help transform your business with technology.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center" data-aos="zoom-in" data-aos-delay="200">
+                        <a href="contact.html" class="btn btn-light btn-lg px-5">
+                            <i class="bi bi-telephone me-2"></i>Contact Us
+                        </a>
+                        <a href="index.html#services" class="btn btn-outline-light btn-lg px-5">
+                            <i class="bi bi-grid me-2"></i>Our Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  
+<footer class="footer py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <h5 class="text-white fw-bold mb-3">
+                    <i class="bi bi-lightning-charge-fill me-2"></i>TechFlow
+                </h5>
+                <p class="text-light opacity-75 mb-4">
+                    Transforming businesses through innovative technology solutions and exceptional service delivery.
+                </p>
+                <div class="social-links d-flex gap-3">
+                    <a href="#" class="social-link text-light">
+                        <i class="bi bi-facebook fs-5"></i>
+                    </a>
+                    <a href="#" class="social-link text-light">
+                        <i class="bi bi-twitter fs-5"></i>
+                    </a>
+                    <a href="#" class="social-link text-light">
+                        <i class="bi bi-linkedin fs-5"></i>
+                    </a>
+                    <a href="#" class="social-link text-light">
+                        <i class="bi bi-instagram fs-5"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-2 col-md-6">
+                <h6 class="text-white fw-semibold mb-3">Services</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="index.html#services" class="text-light opacity-75 text-decoration-none">Web Development</a></li>
+                    <li class="mb-2"><a href="index.html#services" class="text-light opacity-75 text-decoration-none">Mobile Apps</a></li>
+                    <li class="mb-2"><a href="index.html#services" class="text-light opacity-75 text-decoration-none">Cloud Solutions</a></li>
+                    <li class="mb-2"><a href="index.html#services" class="text-light opacity-75 text-decoration-none">Consulting</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-2 col-md-6">
+                <h6 class="text-white fw-semibold mb-3">Company</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="about.html" class="text-light opacity-75 text-decoration-none">About Us</a></li>
+                    <li class="mb-2"><a href="#" class="text-light opacity-75 text-decoration-none">Careers</a></li>
+                    <li class="mb-2"><a href="#" class="text-light opacity-75 text-decoration-none">Blog</a></li>
+                    <li class="mb-2"><a href="contact.html" class="text-light opacity-75 text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <h6 class="text-white fw-semibold mb-3">Newsletter</h6>
+                <p class="text-light opacity-75 mb-3">Subscribe for updates and exclusive offers.</p>
+                <form class="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                        <button class="btn btn-primary" type="submit">
+                            <i class="bi bi-send"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <hr class="my-4 opacity-25">
+        
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="mb-0 text-light opacity-75">© 2024 TechFlow. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="text-light opacity-75 text-decoration-none me-3">Privacy Policy</a>
+                <a href="#" class="text-light opacity-75 text-decoration-none">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white border-0">
+                <h5 class="modal-title" id="loginModalLabel">Welcome Back</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="loginEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="loginEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="loginPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="loginPassword" required>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer justify-content-center border-0">
+                <p class="text-muted mb-0">Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal" data-bs-dismiss="modal">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white border-0">
+                <h5 class="modal-title" id="signupModalLabel">Get Started with TechFlow</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4 p-md-5">
+                <form id="signupForm">
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="signupFirstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="signupFirstName" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="signupLastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="signupLastName" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="signupEmail" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="signupEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="signupService" class="form-label">Interested Service</label>
+                        <select class="form-select form-control" id="signupService" required>
+                            <option value="">Select a service</option>
+                            <option>Web Development</option>
+                            <option>Mobile Apps</option>
+                            <option>Cloud Solutions</option>
+                            <option>General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="signupPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="signupPassword" placeholder="Min 6 characters" required>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                        <label class="form-check-label small" for="agreeTerms">
+                            I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+                        </label>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">Create Account</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white border-0">
+                <h5 class="modal-title" id="demoModalLabel">Product Demo: See TechFlow in Action</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="ratio ratio-16x9">
+                    
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="webDevModal" tabindex="-1" aria-labelledby="webDevModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="webDevModalLabel">Web Development Solutions</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>We build high-performance, SEO-optimized, and visually stunning websites using modern frameworks like React, Vue, and Django. Our focus is on user experience and conversion optimization.</p>
+                <h6 class="fw-bold mt-3">Key Features:</h6>
+                <ul>
+                    <li>Custom Design & Development</li>
+                    <li>CMS Integration (WordPress, headless CMS)</li>
+                    <li>E-commerce Solutions (Shopify, custom platforms)</li>
+                    <li>Performance Audits & Optimization</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="contact.html" class="btn btn-primary w-100">Start Your Project</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="mobileAppModal" tabindex="-1" aria-labelledby="mobileAppModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="mobileAppModalLabel">Mobile Application Development</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From concept to launch, we deliver native and cross-platform apps (iOS & Android) that captivate users and drive business results. We specialize in React Native and Flutter for maximum reach.</p>
+                <h6 class="fw-bold mt-3">Key Features:</h6>
+                <ul>
+                    <li>UI/UX Design for Mobile</li>
+                    <li>Native & Hybrid Development</li>
+                    <li>Backend Integration (APIs)</li>
+                    <li>App Store Submission & Maintenance</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="contact.html" class="btn btn-success w-100">Get an App Quote</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="cloudModal" tabindex="-1" aria-labelledby="cloudModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-info text-white">
+                <h5 class="modal-title" id="cloudModalLabel">Scalable Cloud Solutions</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Leverage the power of the cloud (AWS and Azure) for infinite scalability, high availability, and reduced operational costs. We handle cloud migration, architecture design, and 24/7 monitoring.</p>
+                <h6 class="fw-bold mt-3">Key Features:</h6>
+                <ul>
+                    <li>Cloud Strategy & Migration</li>
+                    <li>DevOps & CI/CD Pipelines</li>
+                    <li>Serverless Architecture</li>
+                    <li>Cost Optimization & Security Audits</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="contact.html" class="btn btn-info w-100">Schedule a Consultation</a>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="welcomeToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header bg-primary text-white">
+        <i class="bi bi-lightning-charge-fill me-2"></i>
+        <strong class="me-auto">TechFlow</strong>
+        <small>Just Now</small>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        <p class="mb-0">Welcome to TechFlow! We're ready to power your digital future.</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  
+  <script src="assets/script.js"></script>
+</body>
+</html>

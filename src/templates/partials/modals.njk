@@ -1,0 +1,175 @@
+{# Modal - Login #}
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white border-0">
+                <h5 class="modal-title" id="loginModalLabel">Welcome Back</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="loginEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="loginEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="loginPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="loginPassword" required>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer justify-content-center border-0">
+                <p class="text-muted mb-0">Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal" data-bs-dismiss="modal">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Modal - Signup / Get Started #}
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white border-0">
+                <h5 class="modal-title" id="signupModalLabel">Get Started with TechFlow</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4 p-md-5">
+                <form id="signupForm">
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="signupFirstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="signupFirstName" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="signupLastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="signupLastName" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="signupEmail" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="signupEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="signupService" class="form-label">Interested Service</label>
+                        <select class="form-select form-control" id="signupService" required>
+                            <option value="">Select a service</option>
+                            <option>Web Development</option>
+                            <option>Mobile Apps</option>
+                            <option>Cloud Solutions</option>
+                            <option>General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="signupPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="signupPassword" placeholder="Min 6 characters" required>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                        <label class="form-check-label small" for="agreeTerms">
+                            I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+                        </label>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">Create Account</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Modal - Demo Video (Rickroll) #}
+<div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white border-0">
+                <h5 class="modal-title" id="demoModalLabel">Product Demo: See TechFlow in Action</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="ratio ratio-16x9">
+                    {# Rickroll URL #}
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Modal - Web Development Details #}
+<div class="modal fade" id="webDevModal" tabindex="-1" aria-labelledby="webDevModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="webDevModalLabel">Web Development Solutions</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>We build high-performance, SEO-optimized, and visually stunning websites using modern frameworks like React, Vue, and Django. Our focus is on user experience and conversion optimization.</p>
+                <h6 class="fw-bold mt-3">Key Features:</h6>
+                <ul>
+                    <li>Custom Design & Development</li>
+                    <li>CMS Integration (WordPress, headless CMS)</li>
+                    <li>E-commerce Solutions (Shopify, custom platforms)</li>
+                    <li>Performance Audits & Optimization</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="contact.html" class="btn btn-primary w-100">Start Your Project</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Modal - Mobile App Details #}
+<div class="modal fade" id="mobileAppModal" tabindex="-1" aria-labelledby="mobileAppModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="mobileAppModalLabel">Mobile Application Development</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From concept to launch, we deliver native and cross-platform apps (iOS & Android) that captivate users and drive business results. We specialize in React Native and Flutter for maximum reach.</p>
+                <h6 class="fw-bold mt-3">Key Features:</h6>
+                <ul>
+                    <li>UI/UX Design for Mobile</li>
+                    <li>Native & Hybrid Development</li>
+                    <li>Backend Integration (APIs)</li>
+                    <li>App Store Submission & Maintenance</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="contact.html" class="btn btn-success w-100">Get an App Quote</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{# Modal - Cloud Solutions Details #}
+<div class="modal fade" id="cloudModal" tabindex="-1" aria-labelledby="cloudModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-info text-white">
+                <h5 class="modal-title" id="cloudModalLabel">Scalable Cloud Solutions</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Leverage the power of the cloud (AWS and Azure) for infinite scalability, high availability, and reduced operational costs. We handle cloud migration, architecture design, and 24/7 monitoring.</p>
+                <h6 class="fw-bold mt-3">Key Features:</h6>
+                <ul>
+                    <li>Cloud Strategy & Migration</li>
+                    <li>DevOps & CI/CD Pipelines</li>
+                    <li>Serverless Architecture</li>
+                    <li>Cost Optimization & Security Audits</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="contact.html" class="btn btn-info w-100">Schedule a Consultation</a>
+            </div>
+        </div>
+    </div>
+</div>

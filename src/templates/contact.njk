@@ -1,0 +1,244 @@
+{% extends "base.njk" %}
+
+{% block content %}
+    <section class="contact-hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h1 class="display-4 fw-bold mb-3" data-aos="fade-up">Get In Touch</h1>
+                    <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">
+                        We'd love to hear from you. Let's start a conversation about how we can help your business.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <div class="card contact-form shadow-sm border-0 mb-4">
+                        <div class="card-body p-4 p-md-5">
+                            <h2 class="fw-bold mb-4">Send us a message</h2>
+                            <form id="contactForm" data-netlify="true">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control" id="subject" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="newsletter">
+                                            <label class="form-check-label" for="newsletter">
+                                                Subscribe to our newsletter
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-lg px-5">
+                                            <i class="bi bi-send me-2"></i>Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-left">
+                    <div class="contact-info-card card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary rounded-circle p-3 me-3">
+                                    <i class="bi bi-geo-alt text-white fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-0">Address</h5>
+                                    <p class="text-muted mb-0">123 Tech Street, San Francisco, CA 94103</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-card card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-success rounded-circle p-3 me-3">
+                                    <i class="bi bi-telephone text-white fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-0">Phone</h5>
+                                    <p class="text-muted mb-0">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-card card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-info rounded-circle p-3 me-3">
+                                    <i class="bi bi-envelope text-white fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-0">Email</h5>
+                                    <p class="text-muted mb-0">info@techflow.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-card card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-warning rounded-circle p-3 me-3">
+                                    <i class="bi bi-clock text-white fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-0">Business Hours</h5>
+                                    <p class="text-muted mb-0">Mon - Fri: 9:00 AM - 6:00 PM</p>
+                                    <p class="text-muted mb-0">Sat: 10:00 AM - 4:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">Find Us Here</h2>
+                    <p class="lead text-muted" data-aos="fade-up" data-aos-delay="100">
+                        Visit our office or get in touch for a consultation
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12" data-aos="zoom-in">
+                    <div class="map-container shadow-sm">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.336496417743!2d-122.42067758468155!3d37.79471137975877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064a377d637%3A0x242456578e9f50f4!2s123%20Tech%20St%2C%20San%20Francisco%2C%20CA%2094103%2C%20USA!5e0!3m2!1sen!2sin!4v1619655510620!5m2!1sen!2sin" 
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">Frequently Asked Questions</h2>
+                    <p class="lead text-muted" data-aos="fade-up" data-aos-delay="100">
+                        Find answers to common questions about our services
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 mb-3 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How long does a typical project take?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The timeline for a project depends on its complexity and scope. A simple website might take 2-4 weeks, while a complex web application could take 3-6 months. We provide a detailed timeline after our initial consultation.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item border-0 mb-3 shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Do you provide ongoing support after project completion?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we offer various support packages to ensure your solution continues to perform optimally. Our support includes regular updates, security patches, and technical assistance.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item border-0 mb-3 shadow-sm" data-aos="fade-up" data-aos-delay="400">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    What industries do you work with?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We work with businesses across various industries including healthcare, finance, education, e-commerce, and more. Our solutions are tailored to meet the specific needs of each industry.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item border-0 mb-3 shadow-sm" data-aos="fade-up" data-aos-delay="500">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    How do you ensure the security of our data?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We implement industry-standard security practices including encryption, regular security audits, secure coding practices, and compliance with data protection regulations like GDPR and CCPA.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h2 class="display-5 fw-bold mb-3" data-aos="zoom-in">Still Have Questions?</h2>
+                    <p class="lead mb-4" data-aos="zoom-in" data-aos-delay="100">
+                        Our team is ready to answer any questions you may have about our services.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center" data-aos="zoom-in" data-aos-delay="200">
+                        <a href="tel:+15551234567" class="btn btn-light btn-lg px-4 px-md-5">
+                            <i class="bi bi-telephone me-2"></i>Call Now
+                        </a>
+                        <a href="mailto:info@techflow.com" class="btn btn-outline-light btn-lg px-4 px-md-5">
+                            <i class="bi bi-envelope me-2"></i>Email Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

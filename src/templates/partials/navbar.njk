@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand text-primary fw-bold fs-3" href="index.html">
+            <i class="bi bi-lightning-charge-fill me-2"></i>TechFlow
+        </a>
+        
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link {% if title == 'Home' %}active fw-semibold{% endif %}" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if title == 'About' %}active fw-semibold{% endif %}" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu shadow">
+                        <li><a class="dropdown-item" href="index.html#services"><i class="bi bi-code-slash me-2"></i>Web Development</a></li>
+                        <li><a class="dropdown-item" href="index.html#services"><i class="bi bi-phone me-2"></i>Mobile Apps</a></li>
+                        <li><a class="dropdown-item" href="index.html#services"><i class="bi bi-cloud me-2"></i>Cloud Solutions</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="contact.html"><i class="bi bi-headset me-2"></i>Support</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if title == 'Contact' %}active fw-semibold{% endif %}" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="d-flex gap-2">
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <i class="bi bi-person me-1"></i>Login
+                </button>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
+                    <i class="bi bi-rocket-takeoff me-1"></i>Get Started
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>

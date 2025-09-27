@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - TechFlow</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  
+  <div id="page-loader">
+      <div class="loader-spinner"></div>
+  </div>
+
+  
+  <a href="#" class="back-to-top">
+      <i class="bi bi-arrow-up"></i>
+  </a>
+
+  
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand text-primary fw-bold fs-3" href="index.html">
+            <i class="bi bi-lightning-charge-fill me-2"></i>TechFlow
+        </a>
+        
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu shadow">
+                        <li><a class="dropdown-item" href="index.html#services"><i class="bi bi-code-slash me-2"></i>Web Development</a></li>
+                        <li><a class="dropdown-item" href="index.html#services"><i class="bi bi-phone me-2"></i>Mobile Apps</a></li>
+                        <li><a class="dropdown-item" href="index.html#services"><i class="bi bi-cloud me-2"></i>Cloud Solutions</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="contact.html"><i class="bi bi-headset me-2"></i>Support</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fw-semibold" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="d-flex gap-2">
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <i class="bi bi-person me-1"></i>Login
+                </button>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
+                    <i class="bi bi-rocket-takeoff me-1"></i>Get Started
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+  <main>
+    <section class="contact-hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h1 class="display-4 fw-bold mb-3" data-aos="fade-up">Get In Touch</h1>
+                    <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">
+                        We'd love to hear from you. Let's start a conversation about how we can help your business.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <div class="card contact-form shadow-sm border-0 mb-4">
+                        <div class="card-body p-4 p-md-5">
+                            <h2 class="fw-bold mb-4">Send us a message</h2>
+                            <form id="contactForm" data-netlify="true">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input type="text" class="form-control" id="subject" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="newsletter">
+                                            <label class="form-check-label" for="newsletter">
+                                                Subscribe to our newsletter
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-lg px-5">
+                                            <i class="bi bi-send me-2"></i>Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4" data-aos="fade-left">
+                    <div class="contact-info-card card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-primary rounded-circle p-3 me-3">
+                                    <i class="bi bi-geo-alt text-white fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-0">Address</h5>
+                                    <p class="text-muted mb-0">123 Tech Street, San Francisco, CA 94103</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-card card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-success rounded-circle p-3 me-3">
+                                    <i class="bi bi-telephone text-white fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-0">Phone</h5>
+                                    <p class="text-muted mb-0">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-card card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-info rounded-circle p-3 me-3">
+                                    <i class="bi bi-envelope text-white fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-0">Email</h5>
+                                    <p class="text-muted mb-0">info@techflow.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-card card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="bg-warning rounded-circle p-3 me-3">
+                                    <i class="bi bi-clock text-white fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-0">Business Hours</h5>
+                                    <p class="text-muted mb-0">Mon - Fri: 9:00 AM - 6:00 PM</p>
+                                    <p class="text-muted mb-0">Sat: 10:00 AM - 4:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">Find Us Here</h2>
+                    <p class="lead text-muted" data-aos="fade-up" data-aos-delay="100">
+                        Visit our office or get in touch for a consultation
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12" data-aos="zoom-in">
+                    <div class="map-container shadow-sm">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.336496417743!2d-122.42067758468155!3d37.79471137975877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064a377d637%3A0x242456578e9f50f4!2s123%20Tech%20St%2C%20San%20Francisco%2C%20CA%2094103%2C%20USA!5e0!3m2!1sen!2sin!4v1619655510620!5m2!1sen!2sin" 
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-3" data-aos="fade-up">Frequently Asked Questions</h2>
+                    <p class="lead text-muted" data-aos="fade-up" data-aos-delay="100">
+                        Find answers to common questions about our services
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 mb-3 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How long does a typical project take?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The timeline for a project depends on its complexity and scope. A simple website might take 2-4 weeks, while a complex web application could take 3-6 months. We provide a detailed timeline after our initial consultation.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item border-0 mb-3 shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Do you provide ongoing support after project completion?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we offer various support packages to ensure your solution continues to perform optimally. Our support includes regular updates, security patches, and technical assistance.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item border-0 mb-3 shadow-sm" data-aos="fade-up" data-aos-delay="400">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    What industries do you work with?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We work with businesses across various industries including healthcare, finance, education, e-commerce, and more. Our solutions are tailored to meet the specific needs of each industry.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item border-0 mb-3 shadow-sm" data-aos="fade-up" data-aos-delay="500">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    How do you ensure the security of our data?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We implement industry-standard security practices including encryption, regular security audits, secure coding practices, and compliance with data protection regulations like GDPR and CCPA.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h2 class="display-5 fw-bold mb-3" data-aos="zoom-in">Still Have Questions?</h2>
+                    <p class="lead mb-4" data-aos="zoom-in" data-aos-delay="100">
+                        Our team is ready to answer any questions you may have about our services.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center" data-aos="zoom-in" data-aos-delay="200">
+                        <a href="tel:+15551234567" class="btn btn-light btn-lg px-4 px-md-5">
+                            <i class="bi bi-telephone me-2"></i>Call Now
+                        </a>
+                        <a href="mailto:info@techflow.com" class="btn btn-outline-light btn-lg px-4 px-md-5">
+                            <i class="bi bi-envelope me-2"></i>Email Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  
+<footer class="footer py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <h5 class="text-white fw-bold mb-3">
+                    <i class="bi bi-lightning-charge-fill me-2"></i>TechFlow
+                </h5>
+                <p class="text-light opacity-75 mb-4">
+                    Transforming businesses through innovative technology solutions and exceptional service delivery.
+                </p>
+                <div class="social-links d-flex gap-3">
+                    <a href="#" class="social-link text-light">
+                        <i class="bi bi-facebook fs-5"></i>
+                    </a>
+                    <a href="#" class="social-link text-light">
+                        <i class="bi bi-twitter fs-5"></i>
+                    </a>
+                    <a href="#" class="social-link text-light">
+                        <i class="bi bi-linkedin fs-5"></i>
+                    </a>
+                    <a href="#" class="social-link text-light">
+                        <i class="bi bi-instagram fs-5"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-2 col-md-6">
+                <h6 class="text-white fw-semibold mb-3">Services</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="index.html#services" class="text-light opacity-75 text-decoration-none">Web Development</a></li>
+                    <li class="mb-2"><a href="index.html#services" class="text-light opacity-75 text-decoration-none">Mobile Apps</a></li>
+                    <li class="mb-2"><a href="index.html#services" class="text-light opacity-75 text-decoration-none">Cloud Solutions</a></li>
+                    <li class="mb-2"><a href="index.html#services" class="text-light opacity-75 text-decoration-none">Consulting</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-2 col-md-6">
+                <h6 class="text-white fw-semibold mb-3">Company</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="about.html" class="text-light opacity-75 text-decoration-none">About Us</a></li>
+                    <li class="mb-2"><a href="#" class="text-light opacity-75 text-decoration-none">Careers</a></li>
+                    <li class="mb-2"><a href="#" class="text-light opacity-75 text-decoration-none">Blog</a></li>
+                    <li class="mb-2"><a href="contact.html" class="text-light opacity-75 text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <h6 class="text-white fw-semibold mb-3">Newsletter</h6>
+                <p class="text-light opacity-75 mb-3">Subscribe for updates and exclusive offers.</p>
+                <form class="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                        <button class="btn btn-primary" type="submit">
+                            <i class="bi bi-send"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <hr class="my-4 opacity-25">
+        
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="mb-0 text-light opacity-75">© 2024 TechFlow. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="text-light opacity-75 text-decoration-none me-3">Privacy Policy</a>
+                <a href="#" class="text-light opacity-75 text-decoration-none">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white border-0">
+                <h5 class="modal-title" id="loginModalLabel">Welcome Back</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="loginEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="loginEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="loginPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="loginPassword" required>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer justify-content-center border-0">
+                <p class="text-muted mb-0">Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal" data-bs-dismiss="modal">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white border-0">
+                <h5 class="modal-title" id="signupModalLabel">Get Started with TechFlow</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4 p-md-5">
+                <form id="signupForm">
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="signupFirstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="signupFirstName" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="signupLastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="signupLastName" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="signupEmail" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="signupEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="signupService" class="form-label">Interested Service</label>
+                        <select class="form-select form-control" id="signupService" required>
+                            <option value="">Select a service</option>
+                            <option>Web Development</option>
+                            <option>Mobile Apps</option>
+                            <option>Cloud Solutions</option>
+                            <option>General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="signupPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="signupPassword" placeholder="Min 6 characters" required>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                        <label class="form-check-label small" for="agreeTerms">
+                            I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+                        </label>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">Create Account</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white border-0">
+                <h5 class="modal-title" id="demoModalLabel">Product Demo: See TechFlow in Action</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="ratio ratio-16x9">
+                    
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="webDevModal" tabindex="-1" aria-labelledby="webDevModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="webDevModalLabel">Web Development Solutions</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>We build high-performance, SEO-optimized, and visually stunning websites using modern frameworks like React, Vue, and Django. Our focus is on user experience and conversion optimization.</p>
+                <h6 class="fw-bold mt-3">Key Features:</h6>
+                <ul>
+                    <li>Custom Design & Development</li>
+                    <li>CMS Integration (WordPress, headless CMS)</li>
+                    <li>E-commerce Solutions (Shopify, custom platforms)</li>
+                    <li>Performance Audits & Optimization</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="contact.html" class="btn btn-primary w-100">Start Your Project</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="mobileAppModal" tabindex="-1" aria-labelledby="mobileAppModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="mobileAppModalLabel">Mobile Application Development</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From concept to launch, we deliver native and cross-platform apps (iOS & Android) that captivate users and drive business results. We specialize in React Native and Flutter for maximum reach.</p>
+                <h6 class="fw-bold mt-3">Key Features:</h6>
+                <ul>
+                    <li>UI/UX Design for Mobile</li>
+                    <li>Native & Hybrid Development</li>
+                    <li>Backend Integration (APIs)</li>
+                    <li>App Store Submission & Maintenance</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="contact.html" class="btn btn-success w-100">Get an App Quote</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="cloudModal" tabindex="-1" aria-labelledby="cloudModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-info text-white">
+                <h5 class="modal-title" id="cloudModalLabel">Scalable Cloud Solutions</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Leverage the power of the cloud (AWS and Azure) for infinite scalability, high availability, and reduced operational costs. We handle cloud migration, architecture design, and 24/7 monitoring.</p>
+                <h6 class="fw-bold mt-3">Key Features:</h6>
+                <ul>
+                    <li>Cloud Strategy & Migration</li>
+                    <li>DevOps & CI/CD Pipelines</li>
+                    <li>Serverless Architecture</li>
+                    <li>Cost Optimization & Security Audits</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="contact.html" class="btn btn-info w-100">Schedule a Consultation</a>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="welcomeToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header bg-primary text-white">
+        <i class="bi bi-lightning-charge-fill me-2"></i>
+        <strong class="me-auto">TechFlow</strong>
+        <small>Just Now</small>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        <p class="mb-0">Welcome to TechFlow! We're ready to power your digital future.</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  
+  <script src="assets/script.js"></script>
+</body>
+</html>
